@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+<div class="container clearfix">
+    <header>
+        <section>
+            <h1 class="h4"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+            <p>{{@blog.description}}</p>
+            <img src="{{@blog.logo}}" alt="" />
+        </section>
+        <section>
+            <h2 class="h5">About Me</h2>
+            <ul>
+                <li><a href="http://linkedin.com/in/designingsean">LinkedIn</a></li>
+                <li><a href="http://behance.net/designingsean">Behance</a></li>
+                <li><a href="http://github.com/designingsean">GitHub</a></li>
+                <li><a href="http://stackoverflow.com/users/1238248/sean-ryan">Stack Overflow</a></li>
+                <li><a href="http://twitter.com/designingsean">Twitter</a></li>
+                <li><a href="http://facebook.com/designingsean">Facebook</a></li>
+            </ul>
+            <h2 class="h5">More About Me</h2>
+            <ul>
+                <li><a href="http://www.peoplematter.com" title="People do matter!">My Job</a></li>
+                <li><a href="http://tlgwestashley.com" title="Serious Fun">My Business</a></li>
+                <li><a href="http://toriryanphoto.com" title="Beautiful pictures by a beautiful woman">My Wife</a></li>
+                <li><a href="http://seanandtori.com" title="My kids rock">My Family</a></li>
+            </ul>
+        </section>
+    </header>
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+</div>
+    <footer class="site-footer">
+        <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
+        <div class="inner">
+             <section class="copyright">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2013 &bull; All rights reserved.</section>
+             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://tryghost.org">Ghost</a></section>
+        </div>
+    </footer>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file for Casper }}
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+
+</body>
+</html>
