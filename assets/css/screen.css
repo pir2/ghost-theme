@@ -487,6 +487,10 @@ article h1 a {
     margin-right:5%;
 }
 
+.post-meta span:last-child {
+    margin-left:5%;
+}
+
 .post-meta a {
     color: #9EABB3;
     text-decoration: none;
