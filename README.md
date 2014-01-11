@@ -1,6 +1,6 @@
 # Designing Sean
 
-The theme for [my blog](http://designingsean), which runs [Ghost](http://github.com/tryghost/ghost/).
+The theme for [my blog](http://designingsean.com/), which runs [Ghost](http://github.com/tryghost/ghost/).
 
 ## Copyright & License
 
